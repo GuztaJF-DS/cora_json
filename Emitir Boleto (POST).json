@@ -4,7 +4,8 @@
       "name":"(nome do cliente)",
       "email":"(email do cliente)",
       "document":{
-         "identity":"(Número do documento do seu cliente, apenas números,em traços e pontos	type:(“CPF” ou “CNPJ”)"
+         "identity":"(Número do documento do seu cliente, apenas números,em traços e pontos)",
+	 "type":"(“CPF” ou “CNPJ”)"
       },
       "address":{
          "street":"(rua do cliente)",
@@ -36,7 +37,7 @@
       },
       "discount":{
          "type":"(Tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
-		 "value":"(valor do desconto, normalmente double(20,50), exeto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
+	 "value":"(valor do desconto, normalmente double(20,50), exeto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
       }
 	  //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o paramentro “percent” e na FIXED retorna “amount”
    },
