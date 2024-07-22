@@ -1,0 +1,68 @@
+{
+  "id": "(id vindo da cora)",
+  "status": "(indica o estado do boleto,sendo eles: CANCELLED, DRAFT, IN_PAYMENT, LATE, OPEN, PAID)", // https://developers.cora.com.br/reference/emiss%C3%A3o-de-boleto-registrado-v2#enum-de-estados-dos-boletos
+  "created_at": "(data de criação da fatura.)",
+  "total_amount": "(total no mesmo padrão enviado)",
+  "total_paid": "(total já pago, sera zero caso não tenha sido pago)",
+  "occurrence_date": "Data em que o cliente efetuou o pagamento do boleto",
+  "code": "(codigo definido por nós, identifica o usuário)",
+  "customer": {
+    "name":"(nome do cliente)",
+      "email":"(email do cliente)",
+      "document":{
+        "identity":"(Número do documento do seu cliente, apenas números,em traços e pontos",
+        "type":"(“CPF” ou “CNPJ”)"
+      },
+      "address":{
+        "street":"(rua do cliente)",
+        "number":"(número da rua do cliente)",
+        "district":"(bairro do cliente)",
+        "city":"(cidade do cliente)",
+        "state":"(estado do cliente, formato AA (SP,RJ,ES))",
+        "complement":"(complemento do endereço do cliente)",
+        "country":"(país do Cliente)",
+        "zip_code":"(CEP do cliente)"
+      },
+      "code": "(codigo definido por nós, identifica o cliente)"
+  },
+  "services": [
+    {
+      "name": "(nome Do Serviço)",
+      "description": "(descrição do serviço)",
+      "amount": "(valor do serviço)",
+      "unit": "AMOUNT",
+      "quantity": "Quantidade (Opcional)",
+      "total_amount": "Quantidade total (Opcional)",
+      "code": "(codigo definido por nós, identifica o serviço)"
+    }
+  ],
+  "payment_terms": {
+    "due_date":"(nome do serviço)",
+    "fine":{
+      "date": "(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
+      "amount": "(prop exclusiva do tipo FIXED, valor em Centavos da multa a ser cobrada)",
+      "percent": "(prop exclusiva do tipo PERCENT, valor em procentagem da multa a ser cobrada)",
+      "rate": "(valor percentual da multa a ser cobrada, (0 a 100))"
+    },
+    "interest":{
+      "rate":"(taxa de juros a Ser cobrada, (0 a 100))"
+    },
+    "discount":{
+      "type":"(tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
+      "value":"(valor do desconto, normalmente double(20,50), exeto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
+    }
+  },
+  "payment_options": {
+    "bank_slip": {
+      "barcode": "(código de barras do boleto.)",
+      "digitable": "(linha digitável do boleto)",
+      "our_number": "(nosso número do boleto)",
+      "registered": "(Informa se o boleto foi registrado)",
+      "url": "(URL baixavél do boleto)"
+    }
+  },
+  "payments": [],
+  "pix": {
+    "emv": ""
+  }
+}
