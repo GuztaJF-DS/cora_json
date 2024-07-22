@@ -1,5 +1,5 @@
 {
-   "code":"(id definido por nós mesmos)",
+  "code": "(codigo definido por nós, identifica o usuário)",
    "customer":{
       "name":"(nome do cliente)",
       "email":"(email do cliente)",
@@ -17,13 +17,16 @@
          "country":"(país do Cliente)",
          "zip_code":"(CEP do cliente)"
       },
-    "code": "(outro codigo definido por nós, desta vez para identificar o cliente)"
+      "code": "(codigo definido por nós, identifica o cliente)"
    },
    "services":[
       {
          "name":"(nome do serviço)",
          "description":"(descrição do serviço (MAX. 100))",
-         "amount":"(valor do serviço)"
+         "amount":"(valor do serviço)",
+         "quantity": "Quantidade (Opcional)",
+         "total_amount": "Quantidade total (Opcional)",
+         "code": "(codigo definido por nós, identifica o serviço)"
       }
    ],
    "payment_terms":{
