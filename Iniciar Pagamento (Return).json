@@ -1,0 +1,37 @@
+{
+  "id": "(id vindo da cora)",
+  "status": "(status do pagamento. Neste momento inicial, será definido como 'INITIATED')",
+  "created_at": "(data de criação da fatura.)",
+  "Amount": "(valor total do pagamento em centavos, incluindo juros e multas, ou considerando o desconto do boleto)",
+  "scheduled_at": "(data para qual o pagamento foi agendado YYYY-MM-DD)",
+  "code": "(codigo definido por nós, identifica o Pagamento)",
+  "creditor": {
+    "name": "(nome da pessoa/entidade a quem se deve dinheiro ou outra obrigação financeira)",
+    "document": "(número do documento do seu cliente (apenas números, sem traços e pontos)",
+    "type": "(tipo de documento, 'CPF','CNPJ')"
+  },
+  "bank_slip": {
+    "barcode": "(código de barras do boleto.)",
+    "digitable": "(linha digitável do boleto)",
+    "our_number": "(nosso número do boleto)",
+    "registered": "(informa se o boleto foi registrado)",
+    "url": "(URL baixavél do boleto)",
+    "fine": "(valor do pagamento iniciado correspondente à multa aplicada)",
+    "interest": "(valor do pagamento iniciado correspondente à juros  aplicada)",
+    "interest_monthly_percent": "(taxa percentual de juros a ser cobrada)",
+    "fine_percent": "(porcentagem do valor total cobrada quando o pagamento é atrasado ou não realizado dentro do prazo estipulado)",
+    "fine_value": "(valor fixo cobrado quando o pagamento não é realizado dentro do prazo estipulado)",
+    "discount_percent": "(porcentagem do descontado dado caso o pagamento seja realizado um dia antes da data de vencimento definida)",
+    "discount_value": "(valor Fixo do descontado dado caso o pagamento seja realizado um dia antes da data de vencimento definida)"
+  },
+  "services": [
+    {
+      "name": "(nome do Serviço)",
+      "description": "(descrição do serviço)",
+      "amount": "(valor do serviço)"
+    }
+  ],
+  "payment_terms": {
+    "due_date":"(nome do serviço)"
+  }
+}
