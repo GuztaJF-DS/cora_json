@@ -61,8 +61,17 @@
       "url": "(URL baixavél do boleto)"
     }
   },
-  "payments": [],
+  "payments": [{
+    "id":"(id do pagamento atrelado ao Código de Barras)",
+    "status":"(status do pagamento)",
+    "created_at":"(data_da emissão)",
+    "finalized_at":"(data do pagamento)",
+    "total_paid":"(valor pago em centavos)",
+    "method":"(método de pagamento 'BANK_SLIP'(pago via código de barras) ou 'PIX' (pago via Pix))",
+    "interest":"(Valor total em centavos dos juros pagos)",
+    "fine":"(valor total em centavos da multa paga)"
+  }],
   "pix": {
-    "emv": ""
+    "emv": "codigo copia e cola gerado para pagar o pix, o mesmo é utilizado para gerar o QR code"
   }
 }
