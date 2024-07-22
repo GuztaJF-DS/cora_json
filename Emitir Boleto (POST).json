@@ -1,5 +1,5 @@
 {
-   "code": "(codigo definido por nós, identifica o usuário)",
+   "code": "(código definido por nós, identifica o usuário)",
     "customer":{
        "name":"(nome do cliente)",
        "email":"(email do cliente)",
@@ -17,20 +17,20 @@
          "country":"(país do Cliente)",
          "zip_code":"(CEP do cliente)"
        },
-       "code": "(codigo definido por nós, identifica o cliente)"
+       "code": "(código definido por nós, identifica o cliente)"
     },
     "services":[
        {
          "name":"(nome do serviço)",
          "description":"(descrição do serviço (MAX. 100))",
          "amount":"(valor do serviço)",
-         "quantity": "Quantidade (Opcional)",
-         "total_amount": "Quantidade total (Opcional)",
-         "code": "(codigo definido por nós, identifica o serviço)"
+         "quantity": "(quantidade (Opcional))",
+         "total_amount": "(quantidade total (Opcional))",
+         "code": "(código definido por nós, identifica o serviço)"
        }
     ],
     "payment_terms":{
-       "due_date":"(data de vencimento do boleto. Deve seguir o formato AAAA-MM-DD)",
+       "due_date":"(data de vencimento do boleto. YYYY-MM-DD)",
        "fine":{
          "date":"(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
          "amount":"(valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados)",
@@ -41,12 +41,12 @@
        },
        "discount":{
          "type":"(Tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
-         "value":"(valor do desconto, normalmente double(20,50), exeto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
+         "value":"(valor do desconto, normalmente double(20,50), exceto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
         }
-      //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o paramentro “percent” e na FIXED retorna “amount”
+      //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o parâmetro  “percent” e na FIXED retorna “amount”
     },
     "notification":{
-      "name": "(nome do contado para qual sera enviada a notificação de cobrança)",
+      "name": "(nome do contato para qual será enviada a notificação de cobrança)",
       "channels": [{
        "contact": "(contato para qual seria enviado a notificação de cobrança, deve ser um email válido ou um número de telefone para notificações do tipo SMS (+5511999999999)",
        "channel": "(tipo de canal escolhido, “EMAIL” ou “SMS” (SMS é parte do plano Cora Pro))",
