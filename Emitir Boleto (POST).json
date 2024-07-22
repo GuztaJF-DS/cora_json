@@ -26,7 +26,7 @@
       }
    ],
    "payment_terms":{
-      "due_date":"(nome do serviço)",
+      "due_date":"(data de vencimento do boleto. Deve seguir o formato AAAA-MM-DD)",
       "fine":{
          "date":"(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
          "amount":"(valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados)",
