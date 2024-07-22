@@ -33,7 +33,7 @@
       "unit": "AMOUNT",
       "quantity": "Quantidade (Opcional)",
       "total_amount": "Quantidade total (Opcional)",
-      "code": "(codigo definido por nós, identifica o serviço)"
+      "code": "(código definido por nós, identifica o serviço)"
     }
   ],
   "payment_terms": {
@@ -41,7 +41,7 @@
     "fine":{
       "date": "(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
       "amount": "(prop exclusiva do tipo FIXED, valor em Centavos da multa a ser cobrada)",
-      "percent": "(prop exclusiva do tipo PERCENT, valor em procentagem da multa a ser cobrada)",
+      "percent": "(prop exclusiva do tipo PERCENT, valor em porcentagem da multa a ser cobrada)",
       "rate": "(valor percentual da multa a ser cobrada, (0 a 100))"
     },
     "interest":{
@@ -49,7 +49,7 @@
     },
     "discount":{
       "type":"(tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
-      "value":"(valor do desconto, normalmente double(20,50), exeto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
+      "value":"(valor do desconto, normalmente double(20,50), exceto  caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
     }
   },
   "payment_options": {
@@ -67,11 +67,11 @@
     "created_at":"(data_da emissão)",
     "finalized_at":"(data do pagamento)",
     "total_paid":"(valor pago em centavos)",
-    "method":"(método de pagamento 'BANK_SLIP'(pago via código de barras) ou 'PIX' (pago via Pix))",
+    "method":"(método de pagamento 'BANK_SLIP'(pago vía código de barras) ou 'PIX' (pago vía Pix))",
     "interest":"(Valor total em centavos dos juros pagos)",
     "fine":"(valor total em centavos da multa paga)"
   }],
   "pix": {
-    "emv": "codigo copia e cola gerado para pagar o pix, o mesmo é utilizado para gerar o QR code"
+    "emv": "(código copia e cola gerado para pagar o pix, o mesmo é utilizado para gerar o QR code)"
   }
 }
