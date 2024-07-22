@@ -16,7 +16,8 @@
          "complement":"(complemento do endereço do cliente)",
          "country":"(país do Cliente)",
          "zip_code":"(CEP do cliente)"
-      }
+      },
+    "code": "(outro codigo definido por nós, desta vez para identificar o cliente)"
    },
    "services":[
       {
