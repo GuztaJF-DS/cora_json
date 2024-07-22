@@ -1,5 +1,5 @@
 {
-  "code": "(codigo definido por nós, identifica o pagamento)",
+  "code": "(código definido por nós, identifica o pagamento)",
   "digitable_line":"(código de barras da fatura a ser paga)",
   "scheduled_at":"(Campo para agendar um pagamento 'YYYY-MM-DD')"
 }
