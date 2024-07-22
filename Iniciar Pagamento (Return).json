@@ -2,7 +2,7 @@
   "id": "(id vindo da cora)",
   "status": "(status do pagamento. Neste momento inicial, será definido como 'INITIATED')",
   "created_at": "(data de criação da fatura.)",
-  "Amount": "(valor total do pagamento em centavos, incluindo juros e multas, ou considerando o desconto do boleto)",
+  "amount": "(valor total do pagamento em centavos, incluindo juros e multas, ou considerando o desconto do boleto)",
   "scheduled_at": "(data para qual o pagamento foi agendado YYYY-MM-DD)",
   "code": "(codigo definido por nós, identifica o Pagamento)",
   "creditor": {
