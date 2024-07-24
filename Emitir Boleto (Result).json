@@ -1,77 +1,77 @@
 {
-  "id": "(id vindo da cora)",
-  "status": "(indica o estado do boleto,sendo eles: CANCELLED, DRAFT, IN_PAYMENT, LATE, OPEN, PAID)", // https://developers.cora.com.br/reference/emiss%C3%A3o-de-boleto-registrado-v2#enum-de-estados-dos-boletos
-  "created_at": "(data de criação da fatura.)",
-  "total_amount": "(total no mesmo padrão enviado)",
-  "total_paid": "(total já pago, sera zero caso não tenha sido pago)",
+  "id": "Id vindo da cora",
+  "status": "Indica o estado do boleto,sendo eles: CANCELLED, DRAFT, IN_PAYMENT, LATE, OPEN, PAID", // https://developers.cora.com.br/reference/emiss%C3%A3o-de-boleto-registrado-v2#enum-de-estados-dos-boletos
+  "created_at": "Data de criação da fatura.",
+  "total_amount": "Total no mesmo padrão enviado",
+  "total_paid": "Total já pago, sera zero caso não tenha sido pago",
   "occurrence_date": "Data em que o cliente efetuou o pagamento do boleto",
-  "code": "(codigo definido por nós, identifica o usuário)",
+  "code": "Código definido por nós, identifica o usuário",
   "customer": {
-    "name":"(nome do cliente)",
-      "email":"(email do cliente)",
+    "name":"Nome do cliente",
+      "email":"Email do cliente",
       "document":{
-        "identity":"(Número do documento do seu cliente, apenas números,em traços e pontos",
-        "type":"(“CPF” ou “CNPJ”)"
+        "identity":"Número do documento do seu cliente, apenas números,em traços e pontos",
+        "type":"“CPF” ou “CNPJ”"
       },
       "address":{
-        "street":"(rua do cliente)",
-        "number":"(número da rua do cliente)",
-        "district":"(bairro do cliente)",
-        "city":"(cidade do cliente)",
-        "state":"(estado do cliente, formato AA (SP,RJ,ES))",
-        "complement":"(complemento do endereço do cliente)",
-        "country":"(país do Cliente)",
-        "zip_code":"(CEP do cliente)"
+        "street":"Rua do cliente",
+        "number":"Número da rua do cliente",
+        "district":"Bairro do cliente",
+        "city":"Cidade do cliente",
+        "state":"Estado do cliente, formato AA (SP,RJ,ES)",
+        "complement":"Complemento do endereço do cliente",
+        "country":"País do Cliente",
+        "zip_code":"CEP do cliente"
       },
-      "code": "(codigo definido por nós, identifica o cliente)"
+      "code": "Código definido por nós, identifica o cliente"
   },
   "services": [
     {
-      "name": "(nome Do Serviço)",
-      "description": "(descrição do serviço)",
-      "amount": "(valor do serviço)",
+      "name": "Nome Do Serviço",
+      "description": "Descrição do serviço",
+      "amount": "Valor do serviço",
       "unit": "AMOUNT",
-      "quantity": "Quantidade (Opcional)",
-      "total_amount": "Quantidade total (Opcional)",
-      "code": "(código definido por nós, identifica o serviço)"
+      "quantity": "Quantidade (Opcional",
+      "total_amount": "Quantidade total (Opcional",
+      "code": "Código definido por nós, identifica o serviço"
     }
   ],
   "payment_terms": {
-    "due_date":"(nome do serviço)",
+    "due_date":"Nome do serviço",
     "fine":{
-      "date": "(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
-      "amount": "(prop exclusiva do tipo FIXED, valor em Centavos da multa a ser cobrada)",
-      "percent": "(prop exclusiva do tipo PERCENT, valor em porcentagem da multa a ser cobrada)",
-      "rate": "(valor percentual da multa a ser cobrada, (0 a 100))"
+      "date": "Data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1",
+      "amount": "Prop exclusiva do tipo FIXED, valor em Centavos da multa a ser cobrada",
+      "percent": "Prop exclusiva do tipo PERCENT, valor em porcentagem da multa a ser cobrada",
+      "rate": "Valor percentual da multa a ser cobrada, (0 a 100)"
     },
     "interest":{
-      "rate":"(taxa de juros a Ser cobrada, (0 a 100))"
+      "rate":"Taxa de juros a Ser cobrada, (0 a 100)"
     },
     "discount":{
-      "type":"(tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
-      "value":"(valor do desconto, normalmente double(20,50), exceto  caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
+      "type":"Tipo de desconto aplicado, “FIXED” ou “PERCENT”",
+      "value":"Valor do desconto, normalmente double(20,50), exceto  caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050)"
     }
   },
   "payment_options": {
     "bank_slip": {
-      "barcode": "(código de barras do boleto.)",
-      "digitable": "(linha digitável do boleto)",
-      "our_number": "(nosso número do boleto)",
-      "registered": "(Informa se o boleto foi registrado)",
-      "url": "(URL baixavél do boleto)"
+      "barcode": "Código de barras do boleto.",
+      "digitable": "Linha digitável do boleto",
+      "our_number": "Nosso número do boleto",
+      "registered": "Informa se o boleto foi registrado",
+      "url": "URL baixavél do boleto"
     }
   },
   "payments": [{
-    "id":"(id do pagamento atrelado ao Código de Barras)",
-    "status":"(status do pagamento)",
-    "created_at":"(data_da emissão)",
-    "finalized_at":"(data do pagamento)",
-    "total_paid":"(valor pago em centavos)",
-    "method":"(método de pagamento 'BANK_SLIP'(pago vía código de barras) ou 'PIX' (pago vía Pix))",
-    "interest":"(Valor total em centavos dos juros pagos)",
-    "fine":"(valor total em centavos da multa paga)"
+    "id":"Id do pagamento atrelado ao Código de Barras",
+    "status":"Status do pagamento",
+    "created_at":"Data_da emissão",
+    "finalized_at":"Data do pagamento",
+    "total_paid":"Valor pago em centavos",
+    "method":"Método de pagamento 'BANK_SLIP'(pago vía código de barras) ou 'PIX' (pago vía Pix)",
+    "interest":"Valor total em centavos dos juros pagos",
+    "fine":"Valor total em centavos da multa paga"
   }],
   "pix": {
-    "emv": "(código copia e cola gerado para pagar o pix, o mesmo é utilizado para gerar o QR code)"
+    "emv": "Código copia e cola gerado para pagar o pix, o mesmo é utilizado para gerar o QR code"
   }
 }
