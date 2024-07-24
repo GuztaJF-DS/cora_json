@@ -6,8 +6,8 @@
   	"holder":{
     	"name":"Nome do titular da conta",
     	"document":{
-      	"identity":"CPF ou CNPJ do titular da conta",
-      	"type": "'CPF' ou 'CNPJ'"
+        	"identity":"CPF ou CNPJ do titular da conta",
+        	"type": "'CPF' ou 'CNPJ'"
     	}
   	},
   	"account_type":"ENUM de tipos de Conta [CHECKING (Corrente), SAVINGS (Poupança), PAYMENT (Salário)]"
