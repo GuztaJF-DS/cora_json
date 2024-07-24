@@ -1,20 +1,20 @@
 {
-  "destination":{
-  	"bank_code":"Código da instituição financeira (Ex. 403)",
-  	"acount_number":"Número da Conta bancária com dígito (Ex. 092135)",
-  	"branch_number":"Número da Agência (Ex. 7679)",
-  	"holder":{
-    	"name":"Nome do titular da conta",
-    	"document":{
-        	"identity":"CPF ou CNPJ do titular da conta",
-        	"type": "'CPF' ou 'CNPJ'"
-    	}
-  	},
-  	"account_type":"ENUM de tipos de Conta [CHECKING (Corrente), SAVINGS (Poupança), PAYMENT (Salário)]"
-  },
-  "amount":"Valor da transferência",
-  "description":"Descrição do transferência",
-  "category": "ENUM de categorias, não tenho certeza se são customizáveis, site da cora não disponibilizou uma lista concreta",
-  "code": "Código definido por nós, identifica a transferência",
-  "scheduled": "Data de agendamento"
+   "destination":{
+      "bank_code":"Código da instituição financeira (Ex. 403)",
+      "acount_number":"Número da Conta bancária com dígito (Ex. 092135)",
+      "branch_number":"Número da Agência (Ex. 7679)",
+      "holder":{
+         "name":"Nome do titular da conta",
+         "document":{
+            "identity":"CPF ou CNPJ do titular da conta",
+            "type":"'CPF' ou 'CNPJ'"
+         }
+      },
+      "account_type":"ENUM de tipos de Conta [CHECKING (Corrente), SAVINGS (Poupança), PAYMENT (Salário)]"
+   },
+   "amount":"Valor da transferência",
+   "description":"Descrição do transferência",
+   "category":"ENUM de categorias, não tenho certeza se são customizáveis, site da cora não disponibilizou uma lista concreta",
+   "code":"Código definido por nós, identifica a transferência",
+   "scheduled":"Data de agendamento"
 }
