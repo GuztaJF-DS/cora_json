@@ -1,0 +1,9 @@
+{
+  "start": "Data início YYYY-MM-DD",
+  "end": "Data final YYYY-MM-DD",
+  "type": "Forma de transação no extrato [“CREDIT” ou “DEBIT”]",
+  "transaction_type":"Tipo de Transação [“TRANSFER”, “PAYMENT”, “PIX”, “FEE”]",
+  "page":"Número da página",
+  "perPage":"Itens por página",
+  "aggr": "Opção de incluir o objeto aggregations na request (o total de débitos e créditos)"
+}
