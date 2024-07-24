@@ -14,7 +14,7 @@
   },
   "amount":"Valor da transferência",
   "description":"Descrição do transferência",
-  "category": "ENUM de categorias, não tenho certeza se são customizaveis, site da cora não disponibilizou uma lista concreta",
+  "category": "ENUM de categorias, não tenho certeza se são customizáveis, site da cora não disponibilizou uma lista concreta",
   "code": "Código definido por nós, identifica a transferência",
   "scheduled": "Data de agendamento"
 }
