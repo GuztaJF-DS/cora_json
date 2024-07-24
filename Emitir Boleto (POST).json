@@ -1,59 +1,59 @@
 {
-   "code": "(código definido por nós, identifica o usuário)",
-    "customer":{
-       "name":"(nome do cliente)",
-       "email":"(email do cliente)",
-       "document":{
-         "identity":"(Número do documento do seu cliente, apenas números,em traços e pontos)",
-         "type":"(“CPF” ou “CNPJ”)"
-       },
-       "address":{
-         "street":"(rua do cliente)",
-         "number":"(número da rua do cliente)",
-         "district":"(bairro do cliente)",
-         "city":"(cidade do cliente)",
-         "state":"(estado do cliente, formato AA (SP,RJ,ES))",
-         "complement":"(complemento do endereço do cliente)",
-         "country":"(país do Cliente)",
-         "zip_code":"(CEP do cliente)"
-       },
-       "code": "(código definido por nós, identifica o cliente)"
-    },
-    "services":[
-       {
-         "name":"(nome do serviço)",
-         "description":"(descrição do serviço (MAX. 100))",
-         "amount":"(valor do serviço)",
-         "quantity": "(quantidade (Opcional))",
-         "total_amount": "(quantidade total (Opcional))",
-         "code": "(código definido por nós, identifica o serviço)"
-       }
-    ],
-    "payment_terms":{
-       "due_date":"(data de vencimento do boleto. YYYY-MM-DD)",
-       "fine":{
-         "date":"(data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1)",
-         "amount":"(valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados)",
-         "rate":"(valor percentual da multa a ser cobrada, (0 a 100))"
-       },
-       "interest":{
-         "rate":"(Taxa de juros a Ser cobrada, (0 a 100))"
-       },
-       "discount":{
-         "type":"(Tipo de desconto aplicado, “FIXED” ou “PERCENT”)",
-         "value":"(valor do desconto, normalmente double(20,50), exceto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050))"
-        }
-      //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o parâmetro  “percent” e na FIXED retorna “amount”
-    },
-    "notification":{
-      "name": "(nome do contato para qual será enviada a notificação de cobrança)",
-      "channels": [{
-       "contact": "(contato para qual seria enviado a notificação de cobrança, deve ser um email válido ou um número de telefone para notificações do tipo SMS (+5511999999999)",
-       "channel": "(tipo de canal escolhido, “EMAIL” ou “SMS” (SMS é parte do plano Cora Pro))",
-       "rules":[
-          "uma lista de tipos de notificações presentes aqui : https://developers.cora.com.br/reference/emiss%C3%A3o-de-boleto-registrado-v2#enum-de-tipos-de-notifica%C3%A7%C3%A3o "	
-         ]
-      }]
+  "code": "Código definido por nós, identifica o usuário",
+   "customer":{
+      "name":"Nome do cliente",
+      "email":"Email do cliente",
+      "document":{
+        "identity":"Número do documento do seu cliente, apenas números,em traços e pontos",
+        "type":"“CPF” ou “CNPJ”"
+      },
+      "address":{
+        "street":"Rua do cliente",
+        "number":"Número da rua do cliente",
+        "district":"Bairro do cliente",
+        "city":"Cidade do cliente",
+        "state":"Estado do cliente, formato AA (SP,RJ,ES)",
+        "complement":"Complemento do endereço do cliente",
+        "country":"País do Cliente",
+        "zip_code":"CEP do cliente"
+      },
+      "code": "Código definido por nós, identifica o cliente"
    },
-   "payment_forms":["(prop opcional, envie caso queira criar boleto com QR code pix, para isso terá que enviar as opções 'BANK_SLIP', 'PIX' aqui)"]
- }
+   "services":[
+      {
+        "name":"Nome do serviço",
+        "description":"Descrição do serviço (MAX. 100)",
+        "amount":"Valor do serviço",
+        "quantity": "Quantidade (Opcional)",
+        "total_amount": "Quantidade total (Opcional)",
+        "code": "Código definido por nós, identifica o serviço"
+      }
+   ],
+   "payment_terms":{
+      "due_date":"Data de vencimento do boleto. YYYY-MM-DD",
+      "fine":{
+        "date":"Data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1",
+        "amount":"Valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados",
+        "rate":"Valor percentual da multa a ser cobrada, (0 a 100)"
+      },
+      "interest":{
+        "rate":"Taxa de juros a Ser cobrada, (0 a 100)"
+      },
+      "discount":{
+        "type":"Tipo de desconto aplicado, “FIXED” ou “PERCENT”",
+        "value":"Valor do desconto, normalmente double(20,50), exceto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050)"
+       }
+     //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o parâmetro  “percent” e na FIXED retorna “amount”
+   },
+   "notification":{
+     "name": "Nome do contato para qual será enviada a notificação de cobrança",
+     "channels": [{
+      "contact": "Contato para qual seria enviado a notificação de cobrança, deve ser um email válido ou um número de telefone para notificações do tipo SMS (+5511999999999",
+      "channel": "Tipo de canal escolhido, “EMAIL” ou “SMS” (SMS é parte do plano Cora Pro)",
+      "rules":[
+         "Uma lista de tipos de notificações presentes aqui : https://developers.cora.com.br/reference/emiss%C3%A3o-de-boleto-registrado-v2#enum-de-tipos-de-notifica%C3%A7%C3%A3o "	
+        ]
+     }]
+  },
+  "payment_forms":["Prop opcional, envie caso queira criar boleto com QR code pix, para isso terá que enviar as opções 'BANK_SLIP', 'PIX' aqui"]
+}
