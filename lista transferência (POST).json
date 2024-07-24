@@ -1,0 +1,7 @@
+{
+  "status": "Status do objeto de transferencia",
+  "start": "Data início YYYY-MM-DD",
+  "end": "Data final YYYY-MM-DD",
+  "page":"Número da página",
+  "size":"Tamanho da página"
+}
