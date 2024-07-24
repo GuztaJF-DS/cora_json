@@ -1,37 +1,37 @@
 {
-  "id": "(id vindo da cora)",
-  "status": "(status do pagamento. Neste momento inicial, será definido como 'INITIATED')",
-  "created_at": "(data de criação da fatura.)",
-  "amount": "(valor total do pagamento em centavos, incluindo juros e multas, ou considerando o desconto do boleto)",
-  "scheduled_at": "(data para qual o pagamento foi agendado YYYY-MM-DD)",
-  "code": "(código definido por nós, identifica o Pagamento)",
+  "id": "Id vindo da cora",
+  "status": "Status do pagamento. Neste momento inicial, será definido como 'INITIATED'",
+  "created_at": "Data de criação da fatura.",
+  "amount": "Valor total do pagamento em centavos, incluindo juros e multas, ou considerando o desconto do boleto",
+  "scheduled_at": "Data para qual o pagamento foi agendado YYYY-MM-DD",
+  "code": "Código definido por nós, identifica o Pagamento",
   "creditor": {
-    "name": "(nome da pessoa/entidade a quem se deve dinheiro ou outra obrigação financeira)",
-    "document": "(número do documento do seu cliente (apenas números, sem traços e pontos)",
-    "type": "(tipo de documento, 'CPF','CNPJ')"
+    "name": "Nome da pessoa/entidade a quem se deve dinheiro ou outra obrigação financeira",
+    "document": "Número do documento do seu cliente (apenas números, sem traços e pontos)",
+    "type": "Tipo de documento, 'CPF','CNPJ'"
   },
   "bank_slip": {
-    "barcode": "(código de barras do boleto.)",
-    "digitable": "(linha digitável do boleto)",
-    "our_number": "(nosso número do boleto)",
-    "registered": "(informa se o boleto foi registrado)",
-    "url": "(URL baixável do boleto)",
-    "fine": "(valor do pagamento iniciado correspondente à multa aplicada)",
-    "interest": "(valor do pagamento iniciado correspondente à juros  aplicada)",
-    "interest_monthly_percent": "(taxa percentual de juros a ser cobrada)",
-    "fine_percent": "(porcentagem do valor total cobrada quando o pagamento é atrasado ou não realizado dentro do prazo estipulado)",
-    "fine_value": "(valor fixo cobrado quando o pagamento não é realizado dentro do prazo estipulado)",
-    "discount_percent": "(porcentagem do desconto dado caso o pagamento seja realizado um dia antes da data de vencimento definida)",
-    "discount_value": "(valor Fixo do desconto dado caso o pagamento seja realizado um dia antes da data de vencimento definida)"
+    "barcode": "Código de barras do boleto.",
+    "digitable": "Linha digitável do boleto",
+    "our_number": "Nosso número do boleto",
+    "registered": "Informa se o boleto foi registrado",
+    "url": "URL baixável do boleto",
+    "fine": "Valor do pagamento iniciado correspondente à multa aplicada",
+    "interest": "Valor do pagamento iniciado correspondente à juros  aplicada",
+    "interest_monthly_percent": "Taxa percentual de juros a ser cobrada",
+    "fine_percent": "Porcentagem do valor total cobrada quando o pagamento é atrasado ou não realizado dentro do prazo estipulado",
+    "fine_value": "Valor fixo cobrado quando o pagamento não é realizado dentro do prazo estipulado",
+    "discount_percent": "Porcentagem do desconto dado caso o pagamento seja realizado um dia antes da data de vencimento definida",
+    "discount_value": "Valor Fixo do desconto dado caso o pagamento seja realizado um dia antes da data de vencimento definida"
   },
   "services": [
     {
-      "name": "(nome do serviço)",
-      "description": "(descrição do serviço)",
-      "amount": "(valor do serviço)"
+      "name": "Nome do serviço",
+      "description": "Descrição do serviço",
+      "amount": "Valor do serviço"
     }
   ],
   "payment_terms": {
-    "due_date":"(nome do serviço)"
+    "due_date":"Nome do serviço"
   }
 }
