@@ -1,0 +1,35 @@
+{
+  "start": {
+    "date":"Data da primeira movimentação após a data espeficicada no Start da request, ou vazio caso não tenha nenhuma movimentação na época",
+    "Balance":"Saldo em centavos na data"
+  },
+  "entries":[
+    {
+      "id":"Nome do cliente",
+      "type":"Forma de transação [“CREDIT” ou “DEBIT”]",
+      "amount":"Valor Total da Transação em centavos",
+      "createdAt":"Data da Transação",
+      "transaction":{
+        "id":"Id do pagamento ou transferência",
+        "type":"Tipo de Transação [“TRANSFER”, “PAYMENT”, “PIX”, “FEE”]",
+        "description":"Descrição da transação",
+        "counterParty":{
+          "name":"Nome da Contraparte na transação",
+          "identity":"Documento de identificação da contraparte na transação, apenas com números"
+        }
+      }
+    }
+  ],
+  "end": {
+    "date":"Data da ultima movimentação antes da data espeficicada no End da request, ou vazio caso não tenha nenhuma movimentação na época",
+    "Balance":"Saldo em centavos na data"
+  },
+  "aggregations": {
+    "creditTotal":"Soma dos valores tipo CREDIT",
+    "debitTotal":"Soma dos valores tipo DEBIT"
+  },
+  "header":{
+    "businessName":"Titular do extrato",
+    "businessDocument":"Documento de identificação do detentor do extrato, apenas em números"
+  }
+}
