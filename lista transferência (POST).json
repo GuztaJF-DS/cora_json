@@ -1,7 +1,7 @@
 {
   "status": "Status do objeto de transferencia (REFUNDED, CANCELED, COMPLETED)",
-  "start": "Data início YYYY-MM-DD",
-  "end": "Data final YYYY-MM-DD",
-  "page":"Número da página",
-  "size":"Tamanho da página"
+  "start": "Data início YYYY-MM-DD", //opcional
+  "end": "Data final YYYY-MM-DD", //opcional
+  "page":"Número da página", //opcional
+  "size":"Tamanho da página" //opcional
 }
