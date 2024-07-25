@@ -7,14 +7,14 @@
          "name":"Nome do titular da conta",
          "document":{
             "identity":"CPF ou CNPJ do titular da conta",
-            "type":"'CPF' ou 'CNPJ'"
+            "type":"'CPF' ou 'CNPJ'" //opcional
          }
       },
-      "account_type":"ENUM de tipos de Conta [CHECKING (Corrente), SAVINGS (Poupança), PAYMENT (Salário)]"
+      "account_type":"ENUM de tipos de Conta [CHECKING (Corrente), SAVINGS (Poupança), PAYMENT (Salário)]" //opcional
    },
    "amount":"Valor da transferência",
-   "description":"Descrição do transferência",
-   "category":"ENUM de categorias, não tenho certeza se são customizáveis, site da cora não disponibilizou uma lista concreta",
-   "code":"Código definido por nós, identifica a transferência",
-   "scheduled":"Data de agendamento"
+   "description":"Descrição do transferência", //opcional
+   "category":"ENUM de categorias, não tenho certeza se são customizáveis, site da cora não disponibilizou uma lista concreta", //opcional
+   "code":"Código definido por nós, identifica a transferência", //opcional
+   "scheduled":"Data de agendamento" //opcional
 }
