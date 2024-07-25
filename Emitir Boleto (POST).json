@@ -2,19 +2,19 @@
   "code": "Código definido por nós, identifica o usuário", //opcional
    "customer":{
       "name":"Nome do cliente",
-      "email":"Email do cliente",
+      "email":"Email do cliente", //opcional
       "document":{
         "identity":"Número do documento do seu cliente, apenas números,em traços e pontos",
         "type":"“CPF” ou “CNPJ”"
       },
-      "address":{
+      "address":{ //opcional
         "street":"Rua do cliente",
         "number":"Número da rua do cliente",
         "district":"Bairro do cliente",
         "city":"Cidade do cliente",
         "state":"Estado do cliente, formato AA (SP,RJ,ES)",
         "complement":"Complemento do endereço do cliente",
-        "country":"País do Cliente",
+        "country":"País do Cliente", //opcional
         "zip_code":"CEP do cliente"
       },
       "code": "Código definido por nós, identifica o cliente"
@@ -31,15 +31,15 @@
    ],
    "payment_terms":{
       "due_date":"Data de vencimento do boleto. YYYY-MM-DD",
-      "fine":{
-        "date":"Data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1",
-        "amount":"Valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados",
-        "rate":"Valor percentual da multa a ser cobrada, (0 a 100)"
+      "fine":{ //opcional
+        "date":"Data a partir da qual será aplicado os juros diários. caso não informada o padrão é data de vencimento +1", //opcional
+        "amount":"Valor em Centavos da multa a ser cobrada, sendo que o amount tem prioridade sob o rate caso ambos sejam informados", //opcional
+        "rate":"Valor percentual da multa a ser cobrada, (0 a 100)" //opcional
       },
-      "interest":{
+      "interest":{ //opcional
         "rate":"Taxa de juros a Ser cobrada, (0 a 100)"
       },
-      "discount":{
+      "discount":{ //opcional
         "type":"Tipo de desconto aplicado, “FIXED” ou “PERCENT”",
         "value":"Valor do desconto, normalmente double(20,50), exceto caso o type seja FIXED, ai muda para decimal (R$ 20,50 = 2050)"
        }
