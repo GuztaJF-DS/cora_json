@@ -1,5 +1,5 @@
 {
-  "code": "Código definido por nós, identifica o usuário",
+  "code": "Código definido por nós, identifica o usuário", //opcional
    "customer":{
       "name":"Nome do cliente",
       "email":"Email do cliente",
@@ -45,7 +45,7 @@
        }
      //dependendo do type a resposta do discount vai ser diferente, no PERCENT a response retorna o parâmetro  “percent” e na FIXED retorna “amount”
    },
-   "notification":{
+   "notification":{ //opcional
      "name": "Nome do contato para qual será enviada a notificação de cobrança",
      "channels": [{
       "contact": "Contato para qual seria enviado a notificação de cobrança, deve ser um email válido ou um número de telefone para notificações do tipo SMS (+5511999999999",
