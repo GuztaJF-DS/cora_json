@@ -1,0 +1,22 @@
+{
+  "id": "Identificador da transferência",
+  "status": "Status do objeto de transferência (REFUNDED, CANCELED, COMPLETED)",
+  "created_at": "Data de iniciação da transferência",
+  "destination":{
+    "bank_code":"Codigo da instuição financeira (Ex. 403)",
+    "acount_number":"Número da Conta bancaria com dígito (Ex. 092135)",
+    "branch_number":"Número da Agência (Ex. 7679)",
+    "holder":{
+      "name":"Nome do titular da conta",
+      "document":{
+        "identity":"CPF ou CNPJ do titular da conta",
+        "type": "'CPF' ou 'CNPJ'"
+      }
+    },
+    "account_type":"Tipos de conta, (CHECKING, SAVINGS, PAYMENT)"
+  },
+  "amount": "Valor da transferência em centavos",
+  "description":"Descrição da operação",
+  "code":"Código definido por nós, identifica a transferência",
+  "category":"Enumerado de Categorias"
+}
