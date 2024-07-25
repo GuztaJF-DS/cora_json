@@ -1,0 +1,8 @@
+{
+  "start": "Data início YYYY-MM-DD",  //opcional
+  "end": "Data final YYYY-MM-DD", //opcional
+  "state":"Número da página", //opcional
+  "search":"Descrição dos possíveis estados do boleto", //opcional
+  "page":"Número da página", //opcional
+  "perPage":"Itens por página" //opcional
+}
